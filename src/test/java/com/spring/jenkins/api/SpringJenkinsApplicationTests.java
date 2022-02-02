@@ -2,7 +2,6 @@ package com.spring.jenkins.api;
 
 
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -12,13 +11,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class SpringJenkinsApplicationTests {
+public class SpringJenkinsApplicationTests {
 
 	public static Logger logger = LoggerFactory.getLogger(SpringJenkinsApplicationTests.class);
 
 	@Test
-	void contextLoads() {
-		logger.info("Test case executed................");
+	public void contextLoads() {
+		logger.info("Test case executing...");
 		assertEquals(true, true);
 	}
 
